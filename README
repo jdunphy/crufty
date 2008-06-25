@@ -1,0 +1,16 @@
+= Crufty 0.1
+
+Find dead code.  A dumb plugin to find methods that aren't called (or aren't called often).
+
+== Usage
+
+Simple usage:
+
+rake crufty:find_methods DIR=app/models
+
+That will print out a list of methods (and their files) in app/models that aren't called anywhere in app or lib.
+
+Want to find methods that are just called just once?
+
+rake cruft:find_methods DIR=app/models SENSITIVITY=2
+
