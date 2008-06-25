@@ -12,5 +12,4 @@ That will print out a list of methods (and their files) in app/models that aren'
 
 Want to find methods that are just called just once?
 
-rake cruft:find_methods DIR=app/models SENSITIVITY=2
-
+rake crufty:find_methods DIR=app/models SENSITIVITY=2
