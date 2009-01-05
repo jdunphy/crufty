@@ -35,7 +35,7 @@ module Crufty
     end
     
     def cruft_check
-      self.references = `grep -r #{name} app lib`.split("\n")
+      self.references = `grep -r #{name} app lib | grep -v \\.svn`.split("\n")
     end
     
     def crufty?(sensitivity)
