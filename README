@@ -1,4 +1,4 @@
-= Crufty 0.1
+= Crufty 0.2
 
 Find dead code.  A dumb plugin to find methods that aren't called (or aren't called often).
 
