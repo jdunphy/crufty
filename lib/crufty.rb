@@ -36,7 +36,7 @@ module Crufty
     end
     
     def cruft_check
-      self.references = `grep -r #{name} app lib#{scm_based_refinement}`.split("\n")
+      @references = `grep -r #{name} app lib#{scm_based_refinement}`.split("\n")
     end
     
     def scm_based_refinement
