@@ -12,7 +12,7 @@ module Crufty
       end
       methods.compact.map {|m| CruftyMethod.new(m)}.each do |m|
         if m.crufty?(sensitivity)
-          puts "\n===> #{m.to_s} in #{file}"
+          puts "\n===> #{m} in #{file}"
           puts m.references if sensitivity > 1
         end
       end
